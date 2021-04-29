@@ -2,7 +2,11 @@
   "name": "zeromq-ts",
   "version": "1.0.0",
   "description": "A typed, documented and simplified zeromq.js\"",
-  "main": "index.js",
+  "main": "lib/zmq.js",
+  "types": "lib/zmq.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "rm -rf lib && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

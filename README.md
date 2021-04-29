@@ -1,26 +1,10 @@
 # zeromq.ts
 
-A typed [zeromq.js based on version 5.x](https://github.com/zeromq/zeromq.js/tree/5.x).
+A typed and documented [zeromq.js based on version 5.x](https://github.com/zeromq/zeromq.js/tree/5.x).
 
-This project was started because the original library does not offer any API documentation nor other resources which would suffice to explain how to use it. TypeScript type definitions are also missing which means that the programmer has to dive into the source code to know which constructs exist and how to use it. On top of that there are ZMQ specifics which the developer has to know to use the library the right way.
+## Installation
 
-This wrapper for zeromq.js tries to overcome those weaknesses by offering a typed interface and by providing the original ZMQ documentation in the right spots. Use a modern IDE like VS Code to take advantage of this. It also hides some ZMQ details which further lowers the entry barrier.
-
-## Quickstart
-
-```typescript
-import { ProtocolType, SocketType, ZeroMq } from 'zeromq.ts'
-
-let zmq = new ZeroMq(SocketType.subscriber, ProtocolType.tcp, '127.0.0.1:27010', {
-  plain_username: 'user',
-  plain_password: 'password'
-})
-
-zmq.onConnected(() => zmq.subscribe(''))
-zmq.onMessage((message: Buffer) => console.log(message.toString()))
-
-zmq.connect()
-```
+Install with `npm install zeromq.ts`.
 
 ## Overview
 
@@ -70,7 +54,7 @@ zmq.onMessage(listener)
 Sending messages.
 
 ```typescript
-zmq.send()
+zmq.send('some_message')
 ```
 
 ### Version
@@ -81,6 +65,8 @@ You can find out the version by importing the corresponding variable.
 import { version } from 'zeromq.ts'
 ```
 
-### Missing things
+## Missing things
 
 There are still some minor things missing which can be added easily which i will do if there is any interest. Just create an issue on GitHub.
+
+Although the 

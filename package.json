@@ -1,5 +1,5 @@
 {
-  "name": "zeromq.ts",
+  "name": "zeromq-ts",
   "version": "1.0.0",
   "description": "A typed, documented and simplified zeromq.js\"",
   "main": "index.js",

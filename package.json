@@ -1,6 +1,6 @@
 {
   "name": "zeromq-ts",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A typed, documented and simplified zeromq.js\"",
   "main": "lib/zmq.js",
   "types": "lib/zmq.d.ts",

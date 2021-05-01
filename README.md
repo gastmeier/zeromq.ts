@@ -42,7 +42,7 @@ These events are named differently in the original library which named them inco
 
 ### ZMQ messages
 
-You can subscribe to messages using a certain filter. It is not
+You can subscribe to messages using a certain filter.
 
 ```typescript
 zmq.subscribe('') // registers to all messages
@@ -68,5 +68,3 @@ import { version } from 'zeromq.ts'
 ## Missing things
 
 There are still some minor things missing which can be added easily which i will do if there is any interest. Just create an issue on GitHub.
-
-Although the 
